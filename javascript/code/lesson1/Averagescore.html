@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Averagescore</title>
+</head>
+<body>
+    <h1>Student grade Finder</h1>
+    <hr>
+    <p>
+        Input Average Score:
+        <input type="text" id="Average">
+    </p>
+    <p>
+        <button type="button"  onclick="findGrade()">Find</button>
+
+    </p>
+    <p>
+        <h1 id="result">Result</h1>
+    </p>
+    <script>
+        function findGrade(){
+            let result="";
+            let Average=document.getElementById('Average').value;
+            if(Average>=90){
+                result='A';
+            }
+            else if(Average>=80){
+                result='B';
+            }
+            else if(Average>=70){
+                result='C';
+            }
+            else if(Average>=60){
+                result='D';
+            }
+            else if(Average>=50){
+                result='E';
+            }
+            else{
+                result='F';
+            }
+            document.getElementById('result').innerHTML='Result='+result;
+            alert('result='+result);
+           
+        }
+    </script>
+</body>
+</html>

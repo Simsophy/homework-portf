@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user login</title>
+</head>
+<body>
+    <h1>Login to continue </h1>
+    <hr>
+    <p>
+        user name:
+        <input type="text" id="username">
+    </p>
+    <p>
+        Password:
+        <input type="text" id="password">
+    </p>
+    <button type="button" onclick="login()">Login</button>
+    <script>
+        function login(){
+            let username=document.getElementById('username').value;
+            let password=document.getElementById('password').value;
+            // if(username=='admin'&&password==123){
+            //      alerts ('login sucess');
+            //     location.href='https://youtube.com';
+
+            // }
+            // else{
+            //      alert('invilid username and password ! ')
+            // }
+           if(username=='admin'){
+              if(password=='123'){
+            location.href ='https://youtube.com';
+           }
+        }
+           else{
+            alert('incorrect password or username');
+           }
+        }
+    </script>
+</body>
+</html>

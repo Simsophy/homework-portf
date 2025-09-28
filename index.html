@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/512510e745.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+     <!-- navigation bar  -->
+   <header class="top-page ">
+    <nav class="navigation container-width">
+        <div class="logo">
+            <i class="fa-solid fa-face-smile"></i>
+            <i class="fa-solid fa-snowflake"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <span class="icon-toggler">
+           <i class="fa-solid fa-bars-staggered"></i>
+        </span>
+        <ul class="nav-lists show">
+            <li class="nav-links"><a href="">Home</a></li>
+            <li class="nav-links"><a href="">Course</a></li>
+            <li class="nav-links"><a href="">Pricing</a></li>
+            <li class="nav-links"><a href="">About</a></li>
+           
+        </ul>
+    </nav>
+   </header> 
+  
+   <script>
+    const menuToggler =document.querySelector(".icon-toggler");
+    const navLists = document.querySelector(".nav-lists");
+    menu.Toggler.addEventsListener("click",()=>{
+        navLists.classList.togglerr("show")
+    })
+   </script>
+
+    <!-- end navigation bar -->
+
+   <!-- hero section -->
+   <section class="hero">
+   <div class="grid-2 container-width hero-grid">
+   <div class="hero-desc">
+    <h1 class="hero-heading" >Welcome to my project</h1>
+    <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+         Molestias, provident doloremque. Tenetur, consectetur. 
+        </p>
+        <a class="btn btn-accent" href="">learn more</a>
+    </div>
+       
+    
+    <div class="hero-img">
+   <img src="img/t.jpg" alt="">
+   
+</div>
+</section>
+
+   <section class="popular-courses">
+    <h1 class="pc-heading">Popular courses</h1>
+    <div class="grid-3 container-width">
+        
+     <article class="course-card">
+        <div class="course-img">
+               <img src="img/sound-wave.png" alt="">
+            <H3 class="course-heading">video play</H3>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Et dolores neque debitis </p>
+                <div class="btn-container">
+                    <a class="btn btn-primary" href="">Preview</a>
+                    <a class="btn btn-accent" href="">60$</a>
+                </div>
+     </article>
+
+
+     <article class="course-card">
+        
+        <div class="course-img">
+               <img src="img/video-player.png" alt="HTML&CSS">
+            <H3 class="course-heading">Edit Video</H3>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Et dolores neque debitis </p>
+                <div class="btn-container">
+                    <a class="btn btn-primary  " href="">Preview</a>
+                    <a class="btn btn-accent" href="">60$</a>
+                </div>
+     </article>
+
+     <article class="course-card">
+        <div class="course-img">
+               <img src="img/photo-com.avif" alt="HTML&CSS">
+            <H3 class="course-heading">Graphic</H3>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Et dolores neque debitis </p>
+                <div class="btn-container">
+                    <a class="btn btn-primary  " href="">Preview</a>
+                    <a class="btn btn-accent" href="">60$</a>
+                </div>
+     
+     </article>
+
+
+     <article class="course-card">
+        <div class="course-img">
+               <img src="img/_JavaScript_logo_2.svg.png" alt="HTML&CSS">
+            <H3 class="course-heading">JavaScript</H3>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Et dolores neque debitis </p>
+                <div class="btn-container">
+                    <a class="btn btn-primary " href="">Preview</a>
+                    <a class="btn btn-accent" href="">60$</a>
+                </div>
+     </article>
+     <article class="course-card">
+        <div class="course-img">
+               <img src="img/html.png" alt="HTML&CSS">
+            <H3 class="course-heading">HTML</H3>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Et dolores neque debitis </p>
+                <div class="btn-container">
+                    <a class="btn btn-primary  " href="">Preview</a>
+                    <a class="btn btn-accent" href="">60$</a>
+                </div>
+     </article>
+     <article class="course-card">
+        <div class="course-img">
+               <img src="img/images.avif" alt="HTML&CSS">
+            <H3 class="course-heading">Database</H3>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Et dolores neque debitis </p>
+                <div class="btn-container">
+                    <a class="btn btn-primary  " href="">Preview</a>
+                    <a class="btn btn-accent" href="">60$</a>
+                </div>
+     </article>
+    </div>
+   </section>
+
+
+<!-- end popular-courses -->
+
+<!-- categories -->
+
+ <section class="Category" >
+    <h2 class="cate-heading">Top Category</h2>
+    <div class="grid-4 container-width">
+       
+        <article class="cate-link">
+            <div class="icon-cate-link">
+                <img src="img/programming.png" alt="coding html css">
+            </div>
+            <h3>coding</h3>
+        </article>
+ 
+    
+        <article class="cate-link">
+            <div class="icon-cate-link">
+                <img src="img/video-editing.png" alt="video-editing">
+            </div>
+            <h3>video-editing></h3>
+        </article>
+   
+   
+        <article class="cate-link">
+            <div class="icon-cate-link">
+                <img src="img/bank.png" alt="Busseness">
+            </div>
+            <h3>Busseness</h3>
+        </article>
+   
+    
+        <article class="cate-link">
+            <div class="icon-cate-link">
+                <img src="img/video-player.png" alt="Graphic">
+            </div>
+            <h3>Graphic</h3>
+        </article>
+   
+    </div>
+ </section>
+  
+
+</body>
+</html>
