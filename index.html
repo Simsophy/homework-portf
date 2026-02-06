@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <!-- HEADER -->
+    
     <header>
         <a href="#home" class="logo">Portfolio</a>
         <nav>
@@ -28,32 +28,55 @@
 
     <!-- HOME -->
     <section id="home" class="home">
-        <div class="home-img">
-            <img src="img/9.png" alt="Sophy Profile Photo">
+    <div class="home-content">
+        <h1>Hello, <span>I'm Sophy</span></h1>
+        <h3 class="typing-text">I am a <span></span> Web Developer</h3>
+        <p>Hi! I'm Sophy, a beginner web developer. I create websites and web applications to help people and businesses have a professional online presence. I enjoy learning new technologies and improving my skills.</p>
+        
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+           
         </div>
-        <div class="home-content">
-            <h1>Hello, <span>I'm Sophy</span></h1>
-            <h3 class="typing-text">I am a <span></span> Web Developer</h3>
-            <p>I provide web development services to help your business grow online. Which service are you interested in?</p>
-            
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="btn">Hire Me</a>
-            </div>
-        </div>
-    </section>
+    </div>
+
+    <div class="home-img">
+        <img src="img/9.png" alt="Sophy Profile Photo">
+    </div>
+</section>
 
     <hr>
 
     
-    <section id="skills" class="content-section">
-        <h2>Skills</h2>
-        <p><strong>Technical:</strong> HTML, CSS, JavaScript, Responsive Web Design, Figma and Adobe Photoshop to Design,Create Resume</p>
-        <p><strong>Other:</strong> Accessibility, Technical Writing, Presentation</p>
-    </section>
+   <section id="skills" class="content-section">
+    <h2>Skills</h2>
+
+    <h3>Frontend / Design</h3>
+    <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Responsive Web Design</li>
+        <li>Figma & Adobe Photoshop (UI/UX Design, Resume Creation)</li>
+    </ul>
+
+    <h3>Backend / Database</h3>
+    <ul>
+        <li>PHP, Laravel</li>
+        <li>MySQL / MariaDB</li>
+       
+        <li>Authentication & Role-based Access Control</li>
+        <li>Data Management & CRUD Operations</li>
+    </ul>
+
+    <h3>Other Skills</h3>
+    <ul>
+        <li>Accessibility</li>
+        <li>Technical Writing</li>
+        <li>Presentation</li>
+    </ul>
+</section>
+
 
    <section id="education">
     <h2>Education</h2>
@@ -130,127 +153,255 @@
 </section>
 
 <section id="experience">
-    <h2>Experience</h2>
+    <h2>Experience & Projects</h2>
     <div class="cards">
 
-        <!-- Existing projects -->
+        <!-- Company Information System -->
         <div class="card">
-            <h3>Company Information Module (2025)</h3>
-            <p><strong>Technologies:</strong> Laravel, PHP, MySQL, Bootstrap</p>
-            <p>This module allows administrators to manage the company's details, including contact info, working hours, description, logo, and Google Maps location. Integrated into the admin panel with a responsive layout.</p>
+            <h3>Company Information & Admin Management System (2025)</h3>
+            <p><strong>Technologies:</strong>  PHP, MySQL, Bootstrap, jQuery, AJAX</p>
+            <p>Admin panel system to manage company data and internal users with role-based access control and multi-language support.</p>
             <ul>
-                <li>View and edit company name, email, phone, address, working hours, and description</li>
-                <li>Upload and display company logo</li>
-                <li>Dynamic Google Maps embedding for location display</li>
-                <li>Responsive layout with Bootstrap grid system</li>
-                <li>Integrated into settings panel for easy navigation</li>
+                <li>Authentication & role-based permissions</li>
+                <li>Company profile & logo management</li>
+                <li>Dashboard with statistics</li>
+                <li>AJAX permission updates</li>
+                <li>Export / Import & multi-language support</li>
             </ul>
+            <div class="project-img">
+                <img src="img/phpdb.png" alt="Company Management System">
+            </div>
+            <p>
+                <a href="https://phpdb.yzz.me/" class="btn btn-primary btn-sm">View Demo</a>
+                <a href="https://github.com/Simsophy/mystock.git" class="btn btn-secondary btn-sm">View Code</a>
+            </p>
         </div>
-<div class="card">
-    <h3>Customer Management App (2025)</h3>
-    <p><strong>Technologies:</strong> JavaScript, HTML, CSS, Bootstrap, Font Awesome</p>
-    <p>A web-based system to manage customers dynamically using LocalStorage. Designed for small businesses or admin panels to track customer details efficiently.</p>
-    <ul>
-        <li>Add new customers with details: code, name, gender, phone, email, and address</li>
-        <li>Edit and update customer information inline with validation</li>
-        <li>Delete customers with confirmation prompts</li>
-        <li>Automatic row numbering and table reordering</li>
-        <li>Persistent data storage using browser LocalStorage</li>
-        <li>Responsive table layout with Bootstrap and icons for user-friendly actions</li>
-    </ul>
-</div>
-<div class="card">
-    <img src="img/caculator.png" alt="Web Calculator App" class="project-img">
-    <p>
-    <a href="https://caculate2.vercel.app" target="_blank" class="btn btn-primary btn-sm">View Demo</a>
-    <a href="https://github.com/Simsophy/Caculate2.git" target="_blank" class="btn btn-secondary btn-sm">View Code</a>
-</p>
-    <h3>Web Calculator App (2025)</h3>
-    <p><strong>Technologies:</strong> JavaScript, HTML, CSS, LocalStorage</p>
-    <p>A fully functional web calculator that allows users to perform arithmetic calculations with live result updates. The app is designed with a responsive UI and persistent storage for convenience.</p>
-    <ul>
-        <li>Supports basic arithmetic: addition, subtraction, multiplication, and division</li>
-        <li>Live calculation display as you type expressions</li>
-        <li>Handles percentages, parentheses, decimals, and π (pi)</li>
-        <li>Rounding results with adjustable precision</li>
-        <li>Delete last input, clear display, and reset calculator</li>
-        <li>Data persistence using LocalStorage — keeps your last expression and result</li>
-        <li>Responsive, styled display with expression and result panels</li>
-    </ul>
-</div>
 
-        <!-- Stock & Inventory Management System -->
+        <!-- Web Calculator -->
         <div class="card">
+            <h3>Web Calculator App (2025)</h3>
+            <p><strong>Technologies:</strong> JavaScript, HTML, CSS, LocalStorage</p>
+            <p>Responsive calculator with live calculations and persistent data storage.</p>
+            <ul>
+                <li>Basic arithmetic operations</li>
+                <li>Live expression & result display</li>
+                <li>LocalStorage persistence</li>
+            </ul>
+            <div class="project-img">
+                <img src="img/caculator.png" alt="Web Calculator App">
+            </div>
+            <p>
+                <a href="https://caculate2.vercel.app" target="_blank" class="btn btn-primary btn-sm">View Demo</a>
+                <a href="https://github.com/Simsophy/Caculate2.git" target="_blank" class="btn btn-secondary btn-sm">View Code</a>
+            </p>
+        </div>
+
+        <!-- Stock & Inventory -->
+        <!-- <div class="card">
             <h3>Stock & Inventory Management System (2025)</h3>
             <p><strong>Technologies:</strong> Laravel, PHP, MySQL, Bootstrap, AdminLTE, jQuery, AJAX, DataTables</p>
-            <p>Developed a web-based application to manage products, categories, customers, and company data. Implemented authentication and role-based access control, CRUD operations, low-stock alerts, and product image uploads with Google Maps integration.</p>
-        </div>
+            <p>Manage products, categories, customers, low-stock alerts, and company data.</p>
+            <div class="project-img">
+                <img src="img/stock.png" alt="Stock Management System">
+            </div>
+            <p>
+                <a href="#" class="btn btn-primary btn-sm">View Demo</a>
+                <a href="#" class="btn btn-secondary btn-sm">View Code</a>
+            </p>
+        </div> -->
 
         <!-- Product Management App -->
         <div class="card">
             <h3>Product Management App (React & JavaScript, 2025)</h3>
             <p><strong>Technologies:</strong> React, JavaScript, HTML, CSS, localStorage</p>
-            <p>Frontend application to manage products with full CRUD operations.</p>
+            <p>Frontend app to manage products with full CRUD operations.</p>
             <ul>
-                <li>Add, Edit, Delete, and View product details</li>
-                <li>Dynamic subtotal calculation for each product</li>
+                <li>Add, Edit, Delete, View product details</li>
+                <li>Dynamic subtotal calculation</li>
                 <li>Confirmation before deletion</li>
-                <li>Persistent data using localStorage</li>
-                <li>Responsive design with tables and styled buttons</li>
+                <li>Persistent data with localStorage</li>
             </ul>
+            <div class="project-img">
+                <img src="img/react.png" alt="Product Management App">
+            </div>
+            <p>
+                <a href="#" class="btn btn-primary btn-sm">View Demo</a>
+                <a href="https://github.com/Simsophy/Homework4.git" class="btn btn-secondary btn-sm">View Code</a>
+            </p>
         </div>
 
         <!-- Parking Management System -->
         <div class="card">
             <h3>Parking Management System (2025)</h3>
             <p><strong>Technologies:</strong> JavaScript, HTML, CSS, LocalStorage</p>
-            <p>Web-based system to manage a parking lot. Features include admin login, adding vehicles, editing/updating vehicle info via table, removing vehicles, double-click row edit, and data persistence using LocalStorage.</p>
+            <p>Web app to manage parking lot: vehicles, admin login, edit/remove data, persistent storage.</p>
+            <div class="project-img">
+                <img src="img/parking.png" alt="Parking Management System">
+            </div>
+            <p>
+                <a href="homework-s1yj.vercel.app" class="btn btn-primary btn-sm">View Demo</a>
+                <a href="https://github.com/Simsophy/Homework.git" class="btn btn-secondary btn-sm">View Code</a>
+            </p>
         </div>
 
-        <!-- Online Bookstore Website -->
-        <div class="card">
-            <h3>Online Bookstore Website (Dec 2024)</h3>
-            <p><strong>Technologies:</strong> HTML, CSS</p>
-            <p>Responsive bookstore website with homepage, product listings, and contact sections. Modern layout using Flexbox & Grid.</p>
-        </div>
+       
 
         <!-- Course Website -->
         <div class="card">
             <h3>Course Website (Feb 2025)</h3>
             <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-            <p>Interactive learning platform with navigation, preview buttons, course cards, and dynamic effects.</p>
+            <p>Interactive learning platform with navigation, course cards, and dynamic effects.</p>
+            <div class="project-img">
+                <img src="img/couse.png" alt="Course Website">
+            </div>
+            <p>
+                <a href="https://homework4-ckht.vercel.app/" class="btn btn-primary btn-sm">View Demo</a>
+                <a href="https://github.com/Simsophy/testing-.git" class="btn btn-secondary btn-sm">View Code</a>
+            </p>
         </div>
 
-        <!-- NEW Project 1: Product List App -->
+        <!-- Product List Management App -->
         <div class="card">
             <h3>Product List Management App (2025)</h3>
             <p><strong>Technologies:</strong> JavaScript, HTML, CSS, Bootstrap, Font Awesome</p>
-            <p>This app allows users to manage a list of products dynamically on the web.</p>
-            <ul>
-                <li>View product list with columns: Code, Name, Quantity, Price</li>
-                <li>Search and filter products in real-time</li>
-                <li>Pagination with options for rows per page</li>
-                <li>Edit/Delete actions for each product</li>
-                <li>Responsive design using Bootstrap and icons with Font Awesome</li>
-            </ul>
+            <p>Manage product list dynamically: search, filter, pagination, edit/delete.</p>
+            <div class="project-img">
+                <img src="img/product.png" alt="Product List App">
+            </div>
+            <p>
+               
+            </p>
         </div>
 
-        <!-- NEW Project 2: Customer Invoice App -->
+        <!-- Customer Invoice Management App -->
         <div class="card">
             <h3>Customer Invoice Management App (2025)</h3>
             <p><strong>Technologies:</strong> JavaScript, HTML, CSS, Bootstrap</p>
-            <p>A web-based invoice management system for small businesses.</p>
-            <ul>
-                <li>Add, edit, and remove invoice items with quantity, price, and discount</li>
-                <li>Automatic subtotal and total calculations</li>
-                <li>Save and load invoice data using localStorage</li>
-                <li>Responsive table layout with action buttons for edit/delete</li>
-                <li>User-friendly interface for managing invoices dynamically</li>
-            </ul>
+            <p>Web-based invoice system for small businesses: add/edit/remove items, auto-calculation, localStorage.</p>
+            <div class="project-img">
+                <img src="img/invoice.png" alt="Invoice App">
+            </div>
+            <p>
+                <a href="https://js-customer-f45apzu96-simsophys-projects.vercel.app/" class="btn btn-primary btn-sm">View Demo</a>
+                <a href="https://github.com/Simsophy/JS-customer.git" class="btn btn-secondary btn-sm">View Code</a>
+            </p>
         </div>
 
+        <!-- Contact Form App -->
+        <div class="card">
+            <h3>customer Info</h3>
+            <p><strong>Technologies:</strong> JavaScript, HTML, CSS</p>
+            <p>Interactive contact form with validation and submission handling.</p>
+            <div class="project-img">
+                <img src="img/contact.png" alt="Contact Form App">
+            </div>
+            <p>
+                <a href="https://js-product-iiel.vercel.app/" class="btn btn-primary btn-sm">View Demo</a>
+                <a href="https://github.com/Simsophy/JSON-customer.git" class="btn btn-secondary btn-sm">View Code</a>
+            </p>
+        </div>
+
+    <!-- Company Information System -->
+   
+
+            <!-- Project Details -->
+           <div class="card">
+                    <h3 class="card-title">Company Information & Admin Management System (2025)</h3>
+
+                    <!-- Project Objective -->
+                    <p><strong>Objective:</strong> To provide companies with a centralized platform to manage employees, company data, and access control efficiently, reducing manual errors and improving workflow.</p>
+
+                    <!-- Technologies -->
+                    <p><strong>Technologies:</strong> Laravel, PHP, MySQL, Bootstrap, jQuery, AJAX</p>
+
+                    <!-- Features -->
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Authentication & role-based permissions</li>
+                        <li>Company profile & logo management</li>
+                        <li>Dashboard with statistics</li>
+                        <li>AJAX permission updates</li>
+                        <li>Export / Import & multi-language support</li>
+                    </ul>
+
+                    <div class="project-img">
+                <img src="img/mystock.png" alt="Company Management System">
+            </div>
+                        
+                        <a href="https://github.com/Simsophy/mystock.git" target="_blank" class="btn btn-secondary btn-sm">View Code</a>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    </div>
+    <section id="uxui">
+    <h2>UX/UI Projects</h2>
+    <div class="cards">
+
+        <div class="card">
+    <h3>Fashion E-Commerce Mobile App</h3>
+    <p><strong>Tools:</strong> Figma</p>
+    <p>A comprehensive mobile shopping experience featuring a grid-based layout for product discovery. Includes a promotional banner system, flash sale countdowns, and dynamic category filtering to maximize user engagement.</p>
+    
+    <div class="project-img">
+        <img src="img/Shoping.png" alt="Fashion E-Commerce App Interface">
+    </div>
+
+    <p>
+        <a href="https://www.figma.com/proto/LFJNEW0zbbpTBBKUjtp9NX/layout-mobile?node-id=0-1&t=gIj0kTfFNRN0GHbp-1" target="_blank" class="btn btn-primary btn-sm">View Prototype</a>
+    </p>
+</div>
+
+        
+<div class="card">
+    <h3>E-Commerce Authentication UI</h3>
+    <p><strong>Tools:</strong> Figma</p>
+    <p>A high-fidelity login interface designed to streamline the customer journey. Features integrated Social OAuth options and a clear visual hierarchy to boost user retention.</p>
+    
+    <div class="project-img">
+        <img src="img/first day ux ui.png" alt="E-Commerce Login UI Design">
+    </div>
+
+    <p>
+        <a href="https://www.figma.com/proto/ARO7gAUn8cbT50AntkCjFR/first-day-ux-ui?node-id=0-1&t=NaW5JV0yDahMDlV2-1" target="_blank" class="btn btn-primary btn-sm">View Prototype</a>
+    </p>
+</div>
+       
+        <div class="card">
+    <h3>Mobile Fashion Marketplace</h3>
+    <p><strong>Tools:</strong> Figma</p>
+    <p>An end-to-end mobile shopping interface featuring a grid-based product discovery system. Includes a 'Flash Sale' countdown module and localized search functionality for the Phnom Penh region.</p>
+    
+    <div class="project-img">
+        <img src="img/service.png" alt="Fashion E-commerce Product Grid Design">
+    </div>
+
+    <p>
+        <a href="https://www.figma.com/proto/ROlNy1Y6xUpBwDcjxYP992/service?node-id=0-1&t=5ed7wSpl9Fl7icH3-1" target="_blank" class="btn btn-primary btn-sm">View Prototype</a>
+    </p>
+</div>
+<div class="card">
+    <h3>Foodgo: Food Delivery Ecosystem</h3>
+    <p><strong>Tools:</strong> Figma</p>
+    <p>A comprehensive mobile UI kit featuring a full ordering workflow. Key screens include a high-impact splash screen, interactive product customizers (toppings and spice levels), and a secure multi-method payment gateway.</p>
+    
+    <div class="project-img">
+        <img src="img/food.png" alt="Food Delivery App Full UI Kit">
+    </div>
+
+    <p>
+        <a href="https://www.figma.com/proto/6VkbsQsgWJ2pUG2ZK0ee1u/food?node-id=0-1&t=EtpTwH1lHG6OnfAu-1" target="_blank" class="btn btn-primary btn-sm">View Prototype</a>
+    </p>
+</div>
     </div>
 </section>
+
+</section>
+
 
 
    
